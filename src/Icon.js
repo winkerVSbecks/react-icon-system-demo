@@ -1,5 +1,5 @@
 import React from 'react';
-const files = require.context('!svg-sprite!../svg-assets', false, /.*\.svg$/);
+const files = require.context('!svg-sprite!./assets', false, /.*\.svg$/);
 files.keys().forEach(files);
 
 const Icon = ({ type, className }) => (
